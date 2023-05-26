@@ -9,7 +9,7 @@ export default function Book({ volume }) {
       <p>{volume.description}</p>
       <ul>
         {volume.books.map((book) => (
-          <li key={ordinal}>
+          <li key={book.ordinal}>
             {book.ordinal}: {book.title}
           </li>
         ))}
